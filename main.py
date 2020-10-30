@@ -33,9 +33,7 @@ reason.grid(column=5, row=2)
 
 
 def profile():
-    if (combo.get() == "Sélectionner le profile" or reason.get() == "Sélectionner la raison"):
-        print("no")
-    else:
+    if (combo.get() != "Sélectionner le profile" and reason.get() != "Sélectionner la raison"):
         web(combo.get(), reason.get())
 
 

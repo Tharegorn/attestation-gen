@@ -31,7 +31,7 @@ def web(av, reason):
     insert("address", add, driver)
     insert("city", city, driver)
     insert("zipcode", code, driver)
-    insert("heuresortie", now.strftime("%I:%M"), driver)
+    insert("heuresortie", now.strftime("%H:%M"), driver)
     elem = driver.find_element_by_id("checkbox-" + reason)
     elem.click()
     elem = driver.find_element_by_id("generate-btn")
