@@ -1,7 +1,7 @@
 from tkinter import Tk
 from tkinter.ttk import Button, Label, Combobox
 from tkinter import messagebox
-from web import web
+from pdf import maker
 import os
 import tkinter as tk
 
@@ -34,7 +34,8 @@ reason.grid(column=5, row=2)
 
 def profile():
     if (combo.get() != "Sélectionner le profile" and reason.get() != "Sélectionner la raison"):
-        web(combo.get(), reason.get())
+        maker(combo.get(), reason.get())
+        window.destroy()
 
 
 btn = Button(window, text="Créer l'attestation", command=profile)
