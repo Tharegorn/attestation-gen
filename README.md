@@ -4,7 +4,7 @@
 
 ```python
 pip3 install selenium
-apt-get install python3-tkinter
+pip3 install fpdf
 ```
 
 Configure **profile.json**.
