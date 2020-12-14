@@ -5,6 +5,7 @@
 ```python
 pip3 install selenium
 pip3 install fpdf
+pip3 install qrcode
 ```
 
 Configure **profile.json**.
