@@ -5,11 +5,13 @@
 ```python
 pip3 install qrcode
 pip3 install fpdf
+pip3 install qrcode[pil]
 ```
 
 or
 ```bash
 ./installer.sh
+./installer.bat
 ```
 
 Configure **profile.json**.
